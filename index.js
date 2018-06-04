@@ -2,7 +2,7 @@ const pluginName = 'ScoutfilePlugin';
 const fs = require('fs');
 
 class ScoutfilePlugin {
-  constructor(options) {
+  constructor(options = {}) {
     this.chunks = options.chunks;
   }
 
@@ -12,7 +12,7 @@ class ScoutfilePlugin {
       compilation.entrypoints.forEach(entrypoint => {
         const { hash, renderedHash, name, id } = entrypoint.runtimeChunk;
         const createArgs = `${hash}, ${renderedHash}, ${name}, ${id}`;
-        if (this.chunks.includes(name)) {
+        if (!this.chunks || this.chunks.includes(name)) {
           entryScriptInjections.push(`document.body.appendChild(createAppScript("${createArgs}"));`)
         }
       });
