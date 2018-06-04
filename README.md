@@ -20,7 +20,7 @@ Entrypoint main = main.abc123.js
 If your `index.html` loaded `scout.js`, you could type a url parameters like `?main=ccc444` when accessing your application.
 This would tell the scout to instead load `main.ccc444.js` instead of `main.abc123.js` from wherever you host your files.
 This opens the door to a lot of cool workflow improvements within your team, like being able to manually test the changes in
-an application from commit-to-commit by just going using the scout hash instead of checking out a branch and running it locally!
+an application from commit-to-commit by just using the scout hash instead of checking out a branch and running it locally!
 
 Using the same example from above, you can also run your local code in a production instance by adding `?main=dev`. What this does
 is instead of loading `main.abc123.js`, it will load `localhost:{port}/main.js`. This allows you to quickly debug issues in any instance
