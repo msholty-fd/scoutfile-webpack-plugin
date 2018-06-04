@@ -27,6 +27,7 @@ is instead of loading `main.abc123.js`, it will load `localhost:{port}/main.js`.
 running a `scout.js` and not necessarily be concerned about what backend you are running on your machine. The root of the file served is
 will be whatever you defined `output.publicPath` to be.
 
+For additional reading on the benefits of a scoutfile, <a href="https://alexsexton.com/blog/2013/03/deploying-javascript-applications/">read this article!</a>
 
 <h2 align="center">Install</h2>
 
