@@ -1,7 +1,7 @@
 # scoutfile-webpack-plugin
 Dynamically load your project assets on load time and have control of which assets are served via url parameters
 
-<h2 align="center">Install Alpha</h2>
+<h2 align="center">Install</h2>
 
 ```bash
   npm i --save-dev scoutfile-webpack-plugin
